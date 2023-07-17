@@ -1,5 +1,7 @@
 import React from 'react'
 import Feature_of_leftpart from "./feature_of_leftpart"
+import {motion} from "framer-motion"
+
 
 const isLeft=true;
 const dif=true;
@@ -11,10 +13,16 @@ const Leftpart = () => {
     
     <div id="left_part">
       <div id="circlee"></div>
-      <div id="title">
+      <motion.div
+      
+      initial={{y: "2rem",opacity:0}}
+      animate={{y:"0rem" , opacity:1}}
+      transition= {{duration:"2"}} 
+      
+      id="title">
 
         Discover<br /> Most Suitable<br/> Property
-      </div>
+      </motion.div>
 
       <div id="para">
 
@@ -27,8 +35,6 @@ const Leftpart = () => {
 <input id="input" type="text"></input>
 <button id="leftpart_input_searchbutton"> Search</button>
       </div>
-
-     
 
 <Feature_of_leftpart
 

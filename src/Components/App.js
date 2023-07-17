@@ -17,7 +17,6 @@ function App() {
   
     <Header/>
 <FrontPage/>
-
 <Brand/>
 <Residencies/>
 <Values/>

@@ -356,8 +356,9 @@ cursor: pointer;
  /* white-space: nowrap; */
  overflow-x:auto ;
 display: flex;
-margin-left:4rem;
-gap:4rem;
+margin-left:2rem;
+gap:3rem;
+padding:1rem;
 margin-right:4rem;
 }
 
@@ -371,11 +372,14 @@ margin-right:4rem;
 
 #part{
   display: inline-block;
+  /* border: 2px solid grey; */
+  padding:1rem;
+  width: 16rem;
   
 }
 #partimage{
   height:11rem;
-  width:15rem;
+  width:14rem;
 }
 #partprice{
   margin-top:10px;
@@ -385,7 +389,7 @@ font-size: larger;
 
 #partname{
 
-margin-top:0.5rem;
+margin-top:0.2rem;
 font-size: 2rem;
 color:#1f3e72;
 font-weight: bolder;
@@ -397,7 +401,7 @@ font-weight: bolder;
   width:15rem;
   /* border: 2px solid rgb(25, 24, 24); */
  color:#8c8b8b;
- margin-top:1rem;
+ margin-top:0.5rem;
  font-size: 0.8rem;
 
 }
@@ -528,6 +532,7 @@ width:100%;
 width:48%;
 height:100%;
 margin-left:2rem;
+/* margin-top:-2rem; */
 }
 
 #contactLPtitle1{
@@ -542,6 +547,7 @@ margin-left:2rem;
 
  font-size:2.5rem;
 font-weight: bolder;
+margin-top:10px;
 color:#1f3e72;
 }
 #contactLPdesc{
@@ -549,10 +555,12 @@ color:#1f3e72;
   margin-top:1rem;
 }
 #contactLPcontacts{
-  margin-top:5rem;
+  margin-top:3rem;
   height:23rem;
   width:100%;
+
   /* border:2px solid red; */
+  
 }
 
 #contactLPicon{
@@ -575,6 +583,7 @@ font-size: large;
 margin-top:-3rem;
 margin-left:6rem;
 color:#1f3e72;
+
 font-weight: bolder;
 }
 #contactLPnumber{
@@ -587,10 +596,10 @@ margin-left:6rem;
 }
 #contactLPnowbut{
 /* border:2px solid grey; */
-width:90%;
-margin-left:0.8rem;
+width:87%;
+margin-left:1.1rem;
 margin-top:2rem;
-font-weight: bolder;
+font-weight: 500;
 height:2.7rem;
 color:#4066ff;
 text-align: center;
@@ -604,12 +613,13 @@ border-radius: 6px;
 
 
 .gg{
-height:9.8rem;
-width:16.9rem;
+height:9rem;
+width:16rem;
 margin-top:1rem;
-margin-left:1rem;
+margin-left:1.7rem;
 border:0.5px solid #ededed;
 display: inline-block;
+
 }
 
 
@@ -648,7 +658,7 @@ margin-top:-39.7rem;
   
 #subscribecontainer{
   height:18rem;
-  margin-top:3rem;
+  margin-top:1rem;
   width:95%;
   margin-left:2rem;
   background-color: #4161df;

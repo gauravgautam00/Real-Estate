@@ -15,7 +15,7 @@ const FAQPart = (props) => {
       {props.heading}
       </div>
       <div id="FAQIcondown">
-      <span style={{fontSize:"2rem" ,color: "#4066ff"  , marginTop:"2px" , marginLeft: "2px"}} class="material-icons">
+      <span style={{fontSize:"2rem" ,color: "#4066ff"  , marginTop:"2px" , marginLeft: "2px"}} className="material-icons">
 arrow_drop_down
 </span>
 </div>
@@ -28,10 +28,3 @@ arrow_drop_down
 
 export default FAQPart
 
-{/* 
-<span style={{color: "#4066ff"}}  className="material-icons">
-cancel
-</span>
-<span style={{color: "#4066ff"}}  className="material-icons">
-analytics
-</span> */}

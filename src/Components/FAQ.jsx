@@ -31,7 +31,6 @@ setState(()=>{
 }
 )
 }
-console.log(state);
 
 // console.log(first.index,second.index,third.index);
 
