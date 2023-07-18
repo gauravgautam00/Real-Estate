@@ -1,14 +1,8 @@
 // import '..Components/';
-import Header from "./Header"
-import FrontPage from  "./Front_Page"
-import Brand from "./Brand"
-import Residencies from "./Residencies"
-import Values from "./Values"
-import Contact from "./Contact"
-import Subscribe from "./Subscribe"
-import Footer from "./Footer"
 
-
+import Restaurant from "./Restaurant"
+import { Routes, Route } from "react-router-dom"
+import Starting from "./Starting"
 
 
 function App() {
@@ -16,15 +10,12 @@ function App() {
     
     <div style={{width:"100%" , boxSizing: "border-box"}}>
   
-    <Header/>
-<FrontPage/>
-<Brand/>
-<Residencies/>
-<Values/>
-<Contact/>
-<Subscribe/>
-<Footer/>
+  <Routes>
+    <Route path="/" element={ <Starting/>} />
 
+    <Route path="/rest"  element={ <Restaurant/> }/>
+<Route path="*" element={<div>404 Page not found</div>}/>
+</Routes>
 
 
 

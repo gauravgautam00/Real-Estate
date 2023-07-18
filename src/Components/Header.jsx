@@ -1,10 +1,11 @@
-import React,{useRef} from 'react'
+import React,{useRef } from 'react'
 // import image from  
+import {NavLink} from "react-router-dom"
 import {motion} from "framer-motion"
 
 
 
-const Header = () => {
+const Header = (props) => {
  console.log(10);
   const resicontainer=useRef(null);
   if(resicontainer.current){
@@ -109,6 +110,10 @@ var val=690;
 
 <div ><img id="logo" src="../Images/logo.png" /></div>
 <div id="navbar">
+  
+
+<div className="font-larger"   > <NavLink to={props.path}  style={{cursor:"pointer" , textDecoration:"none" ,color:"white"}}  
+>{props.name}</NavLink></div>
 
 <div ref={resicontainer} className="font-larger" id="residencies" style={{cursor:"pointer"}}  >Residencies</div>
 <div ref={valcontainer} className="font-larger" id="Our Value"  style={{cursor:"pointer"}}>Our Value</div>

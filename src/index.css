@@ -18,6 +18,9 @@ code {
     monospace;
 }
 
+.active{
+  color:blue;
+}
 
 
 /* Header */
