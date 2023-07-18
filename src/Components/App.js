@@ -14,7 +14,7 @@ import Footer from "./Footer"
 function App() {
   return (
     
-    <>
+    <div style={{width:"100%" , boxSizing: "border-box"}}>
   
     <Header/>
 <FrontPage/>
@@ -28,7 +28,7 @@ function App() {
 
 
 
-    </>
+    </div>
     
     
     );

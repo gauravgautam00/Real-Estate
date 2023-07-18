@@ -5,17 +5,81 @@ import {motion} from "framer-motion"
 
 
 const Header = () => {
+ console.log(10);
+  const resicontainer=useRef(null);
+  if(resicontainer.current){
+    console.log(resicontainer)
+  resicontainer.current.onclick=()=>{
+    console.log(10);
+    var windowpos=window.scrollY;
+    window.scrollBy({
+      top:916-windowpos,
+      behavior:"smooth"
+
+    });
+    
+  }
+}
+
+const valcontainer =useRef(null);
+
+if(valcontainer.current){
+  // console.log(resicontainer)
+valcontainer.current.onclick=()=>{
+  console.log(10);
+  var windowpos=window.scrollY;
+  window.scrollBy({
+    top:1553-windowpos,
+    behavior:"smooth"
+
+  })
+}
+}
+
+
+
+
+const contcontainer =useRef(null);
+if(contcontainer.current){
+  // console.log(resicontainer)
+contcontainer.current.onclick=()=>{
+  console.log(10);
+  var windowpos=window.scrollY;
+  window.scrollBy({
+    top:2197-windowpos,
+    behavior:"smooth"
+
+  })
+}
+}
+
+
+const getscontainer =useRef(null);
+if(getscontainer.current){
+  // console.log(resicontainer)
+getscontainer.current.onclick=()=>{
+  console.log(10);
+  var windowpos=window.scrollY;
+  window.scrollBy({
+    top:2867-windowpos,
+    behavior:"smooth"
+
+  })
+}
+}
+
+
+
   const header=useRef(null);
 
   window.onscroll=()=>{
 
-    const rect = header.current.getBoundingClientRect();
     var num=window.scrollY;
-    var mtop=rect.top+num;
-    console.log(num,mtop);
+ 
+    console.log(num);
     if(header.current){ 
 
-      if(num>=100){
+      if(num>=40){
         header.current.style.backgroundColor="#302e2e";
       }
 else{
@@ -25,7 +89,7 @@ else{
 var val=690;
 
 
-console.log(700-num);
+// console.log(700-num);
     if(num>=650){
       header.current.style.position="absolute";
   header.current.style.marginTop=`${val-num}rem`
@@ -46,10 +110,10 @@ console.log(700-num);
 <div ><img id="logo" src="../Images/logo.png" /></div>
 <div id="navbar">
 
-<div className="font-larger" id="residencies">Residencies</div>
-<div className="font-larger" id="Our Value">Our Value</div>
-<div className="font-larger" id="Contact Us">Contact Us</div>
-<div className="font-larger" id="Get Started">Get Started</div>
+<div ref={resicontainer} className="font-larger" id="residencies" style={{cursor:"pointer"}}  >Residencies</div>
+<div ref={valcontainer} className="font-larger" id="Our Value"  style={{cursor:"pointer"}}>Our Value</div>
+<div ref={contcontainer} className="font-larger" id="Contact Us"  style={{cursor:"pointer"}}>Contact Us</div>
+<div ref={getscontainer} className="font-larger" id="Get Started"  style={{cursor:"pointer"}}>Get Started</div>
 <motion.button
 
 whileHover={{scale:1.1}}
