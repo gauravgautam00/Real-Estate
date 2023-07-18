@@ -9,7 +9,7 @@ const Restaurant = () => {
   
   return (
 
-
+    
     <div>
       <Header
       name="Home"
