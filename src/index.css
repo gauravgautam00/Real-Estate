@@ -774,8 +774,8 @@ width:20rem;
 
  #frontpagee{
   height:88rem;
-  min-height: 29rem;
-  min-width: 23rem;
+  /* min-height: 29rem; */
+  /* min-width: 23rem; */
  }
  #left_part{
   width:39rem;
@@ -790,7 +790,130 @@ width:20rem;
   width:39vw;
 }
 }
+@media only screen and (max-width: 1212px) {
+  #frontpagee{
+width:105%;
+  }
+}
+@media only screen and (max-width: 1117px) {
+  #frontpagee{
+width:110%;
+  }
+}
+@media only screen and (max-width: 1069px) {
+  #frontpagee{
+width:115%;
+  }
+}
+@media only screen and (max-width: 1021px) {
+  #frontpagee{
+width:120%;
+  }
+}
+@media only screen and (max-width: 983px) {
+  #frontpagee{
+width:150%;
+  }
+}
+
+@media only screen and (max-width: 801px) {
+  #frontpagee{
+width:170%;
+  }
+}
+@media only screen and (max-width: 430px) {
+  #frontpagee{
+width:370%;
+  }
+  #rpimage{
+    height: 129vw;
+    width:103vw;
+  }
+  #navbar{
+    margin-left:174vw;
+  }
+  #bcontainer{
+    gap:15rem;
+  }
+  #left_part{
+    margin-left:22rem;
+
+  }
+  #rpcontainer{
+    left:29rem;
+  }
+#rcontainer{
+  margin-top:5rem;
+}
+
+#rscrollcontainer{
+  width:74rem;
+}
+#rright{
+  left:312vw;
+}
+#rleft{
+  left:326vw;
+}
+#RPFAQcontainer{
+  margin-left:22rem;
+  margin-top:6rem;
+  width:38rem;
+
+}
+
+#LPFAQcontainer{
+  height:41rem;
+  width:35rem;
+  margin-top:4rem;
+  margin-left:24rem;
+}
+#contactcontainer{
+
+margin-top:12rem;
+height:112rem;
+width:367%;
+margin-left:0rem;
+
+}
+#contactLPcontainer{
+  width:48%;
+  height:34%;
+  margin-left:23rem;
+}
+#contactRPcontainer{
+
+  width:46%;
+  height:50%;
+  margin-left:22rem;
+  margin-top:5.3rem;
+}
 
 
+#subscribecontainer{
+  width:360%;
+  margin-top:-5rem;
+  margin-left:0.9rem;
+}
+
+#subscribedesc{
+  width: 25rem;
+  margin-left: 29rem;
+}
+
+#subscribebut{
+  margin-left:36.7rem;
+}
+#FooterLPcontainer{
+  margin-top:10rem;
+
+
+}
+
+#FooterRPcontainer{
+  margin-left:59rem;
+}
+
+}
 
 /* media queries *//* media queries *//* media queries */
