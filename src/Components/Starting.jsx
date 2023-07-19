@@ -13,10 +13,10 @@ const Starting = () => {
   return (
     <div>
 
-<Header
+{/* <Header
 name="Restaurant"
 path="rest"
-/>
+/> */}
 <FrontPage/>
       <Brand/>
 <Residencies/>

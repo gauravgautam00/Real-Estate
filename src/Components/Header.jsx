@@ -1,4 +1,4 @@
-import React,{useRef } from 'react'
+import React,{useRef,useEffect } from 'react'
 // import image from  
 import {NavLink} from "react-router-dom"
 import {motion} from "framer-motion"
@@ -6,10 +6,18 @@ import {motion} from "framer-motion"
 
 
 const Header = (props) => {
- console.log(10);
   const resicontainer=useRef(null);
+  const valcontainer =useRef(null);
+  const contcontainer =useRef(null);
+  const getscontainer =useRef(null);
+  const header=useRef(null);
+
+
+  useEffect(()=>{
+  
   if(resicontainer.current){
-    console.log(resicontainer)
+   console.log("in header");
+
   resicontainer.current.onclick=()=>{
     console.log(10);
     var windowpos=window.scrollY;
@@ -22,7 +30,6 @@ const Header = (props) => {
   }
 }
 
-const valcontainer =useRef(null);
 
 if(valcontainer.current){
   // console.log(resicontainer)
@@ -40,7 +47,6 @@ valcontainer.current.onclick=()=>{
 
 
 
-const contcontainer =useRef(null);
 if(contcontainer.current){
   // console.log(resicontainer)
 contcontainer.current.onclick=()=>{
@@ -55,7 +61,6 @@ contcontainer.current.onclick=()=>{
 }
 
 
-const getscontainer =useRef(null);
 if(getscontainer.current){
   // console.log(resicontainer)
 getscontainer.current.onclick=()=>{
@@ -71,13 +76,12 @@ getscontainer.current.onclick=()=>{
 
 
 
-  const header=useRef(null);
 
   window.onscroll=()=>{
 
     var num=window.scrollY;
  
-    console.log(num);
+    
     if(header.current){ 
 
       if(num>=40){
@@ -102,6 +106,12 @@ var val=690;
                   
   
   }
+},[header,resicontainer,getscontainer,contcontainer,valcontainer])
+
+
+
+
+    
 
   return (
     <>
@@ -112,10 +122,9 @@ var val=690;
 <div id="navbar">
   
 
-<div className="font-larger"   > <NavLink to={props.path}  style={{cursor:"pointer" , textDecoration:"none" ,color:"white"}}  
->{props.name}</NavLink></div>
 
-<div ref={resicontainer} className="font-larger" id="residencies" style={{cursor:"pointer"}}  >Residencies</div>
+
+<div   className="font-larger" id="residencies" style={{cursor:"pointer"}}  ref={resicontainer}>Residencies</div>
 <div ref={valcontainer} className="font-larger" id="Our Value"  style={{cursor:"pointer"}}>Our Value</div>
 <div ref={contcontainer} className="font-larger" id="Contact Us"  style={{cursor:"pointer"}}>Contact Us</div>
 <div ref={getscontainer} className="font-larger" id="Get Started"  style={{cursor:"pointer"}}>Get Started</div>

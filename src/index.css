@@ -29,8 +29,8 @@ background-color: black;
 width:100%;
 height:5rem;
 z-index: 1;
-/* margin-top:-10rem; */
-/* top:10rem; */
+margin-top:-10rem;
+top:0rem;
 /* border:2px solid grey; */
 
 }
@@ -76,16 +76,20 @@ z-index: 1;
 
 
 /* FrontPage */
-
+#frontpagee{
+  height:49rem;
+  width:100%;
+}
 /* left_part */
 #circlee{
 height:4rem;
 width:4rem;
 background-color: orange;
 border-radius: 50%;
-margin-top:4rem;
-
-
+margin-top:6rem;
+position: relative;
+top:3rem;
+border:2px solid rgb(81, 74, 74);
 margin-left:21.3rem;
 /* z-index:-1; */
 } 
@@ -93,13 +97,16 @@ margin-left:21.3rem;
 
 
 #left_part{
-  margin-top:5rem;
+  margin-top:4rem;
   /* border:2px solid rgb(240, 236, 236); */
-/* margin-top:1rem; */
+/* margin-top:-1rem; */
 width:50%;
   /* border:2px solid white; */
   /* background-color: rgb(21, 26, 168); */
 padding-top:0.1px;
+position:relative;
+top:-1rem;
+
 }
 
 
@@ -108,7 +115,7 @@ padding-top:0.1px;
   
   z-index:-1;
   /* border:2px solid white; */
-  margin-top:-3rem;
+  margin-top:0rem;
   font-size: 4rem;
   font-weight: bold;
   margin-left:7rem;
@@ -749,3 +756,41 @@ width:20rem;
 /* footer */
 /* footer */
 /* footer */
+
+
+
+/* media queries *//* media queries *//* media queries */
+
+
+@media only screen and (max-width: 1222px) {
+ #rright{
+  left: 90vw;
+ }
+
+ #rleft{
+  left: 94vw;
+  margin-left: 2rem;
+ }
+
+ #frontpagee{
+  height:88rem;
+  min-height: 29rem;
+  min-width: 23rem;
+ }
+ #left_part{
+  width:39rem;
+  margin-left:18rem;
+ }
+ #rpcontainer{
+  top:4rem;
+  left:23rem;
+ }
+#rpimage{
+  height:47vw;
+  width:39vw;
+}
+}
+
+
+
+/* media queries *//* media queries *//* media queries */

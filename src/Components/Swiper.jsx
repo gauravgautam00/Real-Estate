@@ -7,7 +7,7 @@ const MyCarousel = () => {
     <Swiper style={{height:"10rem",width:"10rem",backgroundColor:"black"}}>
         
     { json.map((ele,ind)=>{
-        console.log(ele);
+        
 <SwiperSlide key={ind}>
 <div>{ele}</div>
 

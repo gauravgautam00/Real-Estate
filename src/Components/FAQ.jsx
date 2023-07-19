@@ -19,7 +19,7 @@ const [state,setState]=useState([{
 
 
 const funky=(index)=>{
-  console.log(index);
+  
 setState(()=>{
   return [
     {
