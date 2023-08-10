@@ -8,7 +8,7 @@ import Starting from "./Starting"
 function App() {
   return (
     
-    <div style={{width:"100%" , boxSizing: "border-box"}}>
+    <div style={{overflow: "hidded",width:"100%" , boxSizing: "border-box"}}>
   
   <Routes>
     <Route path="/" element={ <Starting/>} />

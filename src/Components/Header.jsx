@@ -133,11 +133,13 @@ var val=690;
 whileHover={{scale:1.1}}
 transition={{duration:"0.5"}}
 id="contact">Contact</motion.button>
-
 </div>
 
-
-
+<div id="hamburger">
+<span  class="material-symbols-outlined">
+menu
+</span>
+</div>
 </div>
  
     </>
